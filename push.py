@@ -116,7 +116,7 @@ class Git:
         try:
             # Initialize Git and push to the new repository
             subprocess.run(["git", "init"], check=True)
-            subprocess.run(["git", "remote", "add", "origin", f"https://github.com/iihtgcpmahesh/{repo_name}.git"],
+            subprocess.run(["git", "remote", "add", "origin", f"https://github.com/iihtmahesh/{repo_name}.git"],
                            check=True)
             subprocess.run(["git", "add", "."], check=True)
             subprocess.run(["git", "commit", "-m", "Add updated test results"], check=True)
